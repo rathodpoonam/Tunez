@@ -2,10 +2,8 @@
 import React, { useState } from "react";
 import { Sidebar, SidebarBody, SidebarLink } from "./ui/sidebar";
 import {
-  IconArrowLeft,
   IconBrandTabler,
   IconHeart,
-  IconSettings,
   IconUserBolt,
 } from "@tabler/icons-react";
 import Link from "next/link";
