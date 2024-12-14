@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "./ui/apple-cards-carousel";
-// import { useRouter } from "next/router";
 
 
 export function AppleCardsCarouselDemo() {
