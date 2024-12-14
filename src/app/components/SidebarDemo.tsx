@@ -43,7 +43,7 @@ export function SidebarDemo() {
   return (
     <div
       className={cn(
-        "rounded-md flex flex-col md:flex-row bg-purple-800 dark:bg-neutral-800 w-full flex-1  mx-auto   overflow-hidden",
+        "rounded-md flex flex-col md:flex-row bg-purple-800  w-full flex-1  mx-auto   overflow-hidden",
         // for your use case, use `h-screen` instead of `h-[60vh]`
       )}
     >
