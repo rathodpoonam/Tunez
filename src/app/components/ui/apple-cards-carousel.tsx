@@ -5,6 +5,7 @@ import React, {
   useState,
   createContext,
   useContext,
+  useCallback
 } from "react";
 import {
   IconArrowNarrowLeft,
@@ -32,7 +33,7 @@ export const CarouselContext = createContext<{
   onCardClose: (index: number) => void;
   currentIndex: number;
 }>({
-  onCardClose: () => {},
+  onCardClose: () => { },
   currentIndex: 0,
 });
 
@@ -164,14 +165,16 @@ export const Card = ({
 }) => {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const { onCardClose, currentIndex } = useContext(CarouselContext);
+  const { onCardClose } = useContext(CarouselContext);
 
-  
-  const handleClose = () => {
+
+  const handleClose = useCallback(() => {
     setOpen(false);
     onCardClose(index);
-  };
+  }, [setOpen, onCardClose, index]);
+
   useOutsideClick(containerRef, () => handleClose());
+
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
@@ -189,7 +192,8 @@ export const Card = ({
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [open, handleClose]);
 
-  
+
+
 
   const handleOpen = () => {
     setOpen(true);

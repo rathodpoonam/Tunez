@@ -209,4 +209,32 @@ const cards = [
     ctaText: "Play",
     audioSrc: "/songs/Peelings.mp3",
   },
+  {
+    description: "Varun Dhavan and Samantha",
+    title: "Beast Mode Citadel",
+    src: "/img/Beast-Mode-Citadel.jpg",
+    ctaText: "Play",
+    audioSrc: "/songs/Beast Mode Citadel .mp3",
+  },
+  {
+    description: "Varun Dhavan and Samantha",
+    title: "Honey Bunny Citadel",
+    src: "/img/honey-bunny-citadel.jpg",
+    ctaText: "Play",
+    audioSrc: "/songs/Honey Bunny Citadel.mp3",
+  },
+  {
+    description: "Slient song",
+    title: "Sahiba",
+    src: "/img/Sahiba-Priya-Saraiya.jpg",
+    ctaText: "Play",
+    audioSrc: "/songs/Sahiba Priya Saraiya.mp3",
+  },
+  {
+    description: "Harrdy Sandhu",
+    title: "Tu RU Ruu",
+    src: "/img/Tu-Ru-Ruu-Harrdy-Sandhu.jpg",
+    ctaText: "Play",
+    audioSrc: "/songs/Tu Ru Ruu.mp3",
+  },
 ];
